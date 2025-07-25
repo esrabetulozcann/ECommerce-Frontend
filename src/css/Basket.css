@@ -1,0 +1,68 @@
+.basket-page {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.basket-left {
+  flex: 2;
+  min-width: 300px;
+}
+
+.basket-right {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  min-width: 250px;
+  height: fit-content;
+}
+
+.basket-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.basket-item img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.basket-item-info {
+  flex: 1;
+}
+
+.basket-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.icon-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.delete-btn {
+  color: #e74c3c;
+}
+
+.checkout-btn {
+  background-color: #ff5000;
+  color: white;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+

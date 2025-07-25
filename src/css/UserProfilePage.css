@@ -1,0 +1,157 @@
+.user-profile-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.profile-content {
+  display: flex;
+  gap: 50px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.section {
+  flex: 1;
+}
+
+.section-subtitle {
+  color: #f27a1a;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form-group,
+.form-group-vertical {
+  margin-bottom: 16px;
+}
+
+.form-group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.form-group-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1;
+  font-size: 14px;
+}
+
+select {
+  min-width: 100px;
+}
+
+.small-update-button {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  accent-color: #f27a1a;
+}
+
+.checkbox-label {
+  font-size: 14px;
+}
+
+.password-info {
+  font-size: 12px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.two-step {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.main-update-button {
+  width: 100%;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #f27a1a;
+  color: #f27a1a;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.main-update-button:hover {
+  background-color: #f27a1a;
+  color: white;
+}
+
+.form-label-bold {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-label-bold {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.phone-update-button {
+  background-color: #F27A1A;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.phone-update-button:hover {
+  opacity: 0.9;
+}
+
+.birthdate{
+    font-weight: bold;
+}

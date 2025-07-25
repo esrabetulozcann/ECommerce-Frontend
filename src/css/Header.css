@@ -1,0 +1,135 @@
+.header-container {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  gap: 20px;
+  max-width: 1200px; /* veya senin container genişliğin neyse */
+  margin: 0 auto; /* ortala */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* hafif gölge */
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+}
+
+.search-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #f3f3f3;
+}
+
+.search-icon {
+   position: absolute;
+  right: calc(50% - 300px + 20px); /* ikonun input'un içinde konumlanması için hesaplama */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #F27A1A;
+  cursor: pointer;
+}
+
+.header-right {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #333;
+  align-items: center;
+}
+
+.header-right span {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* ikon ve yazı arası boşluk */
+  cursor: pointer;
+}
+
+/* HOVER efekti hem yazıya hem ikona uygulasın */
+.header-right span:hover {
+  color: #F27A1A;
+}
+
+.header-right span:hover .header-icon {
+  color: #F27A1A;
+}
+
+.header-icon {
+  font-size: 18px;
+  color: black; /* Trendyol turuncusu = #F27A1A; */ 
+}
+
+
+.account-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;               /* "Hesabım"ın tam ortası için */
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  margin-top: 10px;
+  display: flex;           /* React ile kontrol edildiği için burada hep göster */
+  flex-direction: column;
+  min-width: 220px;
+  z-index: 999;
+}
+
+.header-account {
+  position: relative; /* dropdown konumu için */
+}
+
+.header-account:hover .account-dropdown {
+  display: flex;
+}
+
+.account-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: black;               /* normalde siyah */
+  background-color: transparent;  /* arka plan şeffaf */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.account-dropdown-item:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.account-dropdown-item svg {
+   font-size: 16px;
+  color: black;               /* ikonlar da siyah */
+  transition: color 0.2s;
+}
+
+.account-dropdown-item:hover {
+   background-color: #f0f0f0; /* açık gri */
+  color: #F27A1A;  
+}
+
+.account-dropdown-item:hover svg {
+  color: #F27A1A;    
+}
